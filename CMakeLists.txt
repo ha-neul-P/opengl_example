@@ -1,15 +1,18 @@
 cmake_minimum_required(VERSION 3.13)
 
-set(PROJECT_NAME first_opengl_example)
+set(PROJECT_NAME second_opengl_example)
 set(CMAKE_CXX_STANDARD 17)
 
 	
-set(WINDOW_NAME "FIrst OpenGL Example")
+set(WINDOW_NAME "Second OpenGL Example")
 set(WINDOW_WIDTH 960)
 set(WINDOW_HEIGHT 540)
 
 project(${PROJECT_NAME})
-add_executable(${PROJECT_NAME} src/main.cpp)
+add_executable(${PROJECT_NAME} 
+    src/main.cpp
+    src/common.cpp src/common.h
+    src/shader.cpp src/shader.h)
 
 include(Dependency.cmake)
  
