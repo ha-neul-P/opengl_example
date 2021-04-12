@@ -16,6 +16,9 @@ public:
 
     void Use() const;
 
+    void SetUniform(const std::string& name, int value) const;
+    void SetUniform(const std::string& name, const glm::mat4& value) const;
+
 private:
     Program() {}
     bool Link(const std::vector<ShaderPtr> &shaders);
